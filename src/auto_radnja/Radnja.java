@@ -34,10 +34,20 @@ public interface Radnja {
 	 * 		<li> Listu auto guma cije se marka i model poklapaju sa kriterijumom pretrage </li>
 	 * 		<li> Null ako je prosledjeni parametar null</li>
 	 * 	</ul>
-	 * 
+	 * @throws java.lang.RuntimeException ako je prazna lista 
 	 * 
 	 * 
 	 */
 	LinkedList<AutoGuma> pronadjiGumu(String markaModel);
+	/**
+	 * Vraca sve gume iz liste
+	 * 
+	 * @return Vraca sve gume iz liste guma kao LinkedList.
+	 * 
+	 * @throws java.lang.RuntimeException prazna Lista 
+	 *
+	 * 
+	 */
+	LinkedList<AutoGuma> vratiSveGume();
 
 }
